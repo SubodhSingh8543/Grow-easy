@@ -1,0 +1,36 @@
+.mainDiv{
+    /* border: 1px solid red; */
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.mainDiv>div:nth-child(1){
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-left: 10px;
+}
+
+.mainDiv>div:nth-child(2){
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-right: 10px;
+}
+
+.mainDiv>div:nth-child(1)>img{
+    height: 80px;
+}
+
+.mainDiv>div:nth-child(2)>button{
+    background-color: #ff7846;
+    border: none;
+    height:35px;
+    color: white;
+    border-radius: 1.5px;
+}
