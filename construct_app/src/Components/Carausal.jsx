@@ -1,36 +1,8 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import styles from "./Carausal.module.css";
-// function carousel() {
+import { FaArrowRight} from "react-icons/fa";
 
-//     let images = ["https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/927/1360927-h-375c5733d218", "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/8189/1378189-h-0fe20dd60afa", "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/6845/1376845-h-d0e066aa0374", "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/6451/1376451-h-66d561b15e4e"];
-
-//     let imgElement = document.createElement("img");
-
-
-//     imgElement.src = images[0];
-//     cauresol_div.append(imgElement);
-
-//     let i = 1;
-
-//     setInterval(function () {
-
-
-
-//         if (i === images.length) {
-//             i = 0;
-//         }
-        
-//         imgElement.src = images[i];
-//         cauresol_div.append(imgElement);
-
-
-//         i++;
-
-//     }, 3000);
-
-
-// }
 
 let CarausalData = [
     {
@@ -67,45 +39,36 @@ let CarausalData = [
     }
 ]
 
+// let ineterwal;
+
 function Carausal(){
-    const [data, setData] = useState(0);
     const [timer , setTimer] = useState(0);
-    
+
+
     useEffect(() => {
-        setInterval(() => {
-            setTimer((res) => res+1);
-        }, 1000);
+      setInterval(() => {
+            setTimer((res) => { 
+                if(res === CarausalData.length-1){
+                   return 0;
+                }
+               return res+1
+            });
+        }, 2000);
     },[]);
+
     console.log(timer);
-
-    // useEffect(() => {
-    //     const intervalId = setInterval(() => {
-    //       setCount((prev) => {
-    //         console.log(prev);
-    //         if (prev === 10) {
-    //           // clearInterval(intervalId);
-    //           prev = 0;
-    //         }
-    //         return prev + 1;
-    //       });
-    //     }, 1000);
-    
-    //     // const cleanup = () => {
-    //     //   clearInterval(intervalId);
-    //     //   console.log(`cleanup is called`);
-    //     // };
-    //     // return cleanup;
-    //   },[]);
-
 
     return (
         <div className={styles.mainDiv}>
             <div>
-            {CarausalData.map((item) => (
-               <p key={item.id}>{item.heading}</p>
-            ))}
+            <h1>{CarausalData[timer].heading}</h1>
+             <p>{CarausalData[timer].subHeadind}</p>
+             <div>
+                <button><p>Get a Demo</p> <FaArrowRight/> </button>
+                <button> <p>Signup for free</p>  <FaArrowRight/></button>
+             </div>
             </div>
-            <div></div>
+            <div><img src={CarausalData[timer].image} alt="Error" /></div>
         </div>
     )
 }
