@@ -1,0 +1,24 @@
+
+.OperationMainDiv{
+    color: rgb(0, 0, 0);
+    /* border: 1px solid red; */
+    margin-top: 100px;
+}
+
+.OperationMainDiv>p:nth-child(2){
+    color: #64648c;
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px;
+    width: 500px;
+    font-family: "IBM Plex Sans", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: normal;
+    letter-spacing: normal;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.OperationMainDiv>div{
+    height: 100px;
+    background-color: red;
+}
