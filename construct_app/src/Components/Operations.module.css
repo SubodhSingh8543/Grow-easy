@@ -19,6 +19,62 @@
 }
 
 .OperationMainDiv>div{
-    height: 100px;
-    background-color: red;
+    /* border:1px solid #000000; */
+    height: auto;
+    /* background-color: red; */
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+}
+
+.OperationMainDiv>div>div:nth-child(1){
+    /* border: 1px solid green; */
+    width: 30%;
+}
+
+.OperationMainDiv>div>div:nth-child(1)>h1{
+    color: black;
+    font-size: 21.4px;
+    text-align: start;
+    line-height: 26.4px;
+    width: 80%;
+    margin: auto;
+}
+
+.OperationMainDiv>div>div:nth-child(1)>p{
+    color: #64648c;
+    font-size: 16px;
+    text-align: start;
+    line-height: 24px;
+    width: 80%;
+    font-family: "IBM Plex Sans", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: normal;
+    letter-spacing: normal;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.OperationMainDiv>div>div:nth-child(1)>p:nth-child(7){
+    color: #000ff0;
+    font-size: 16px;
+    text-align: end;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.CheckedIcon{
+    color: #5c07d1;
+    
+}
+
+.OperationMainDiv>div>div:nth-child(2){
+    /* border: 1px solid green; */
+    width: 60%;
+}
+.OperationMainDiv>div>div:nth-child(2)>img{
+    width: 60%;
 }
