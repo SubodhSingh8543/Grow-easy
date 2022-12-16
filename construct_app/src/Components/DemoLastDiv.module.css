@@ -1,0 +1,39 @@
+*{
+    font-family: "IBM Plex Sans", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.mainDiv{
+    /* border: 1px solid red; */
+    height: 600px;
+}
+
+.mainDiv>div{
+    border: 1px solid #3b2399;
+    height: 400px;
+    margin-top: 200px;
+    background-color:#3b2399;
+}
+
+.mainDiv>div>div:nth-child(2){
+    width: 300px;
+    margin-top: -430px;
+    height: 400px;
+    /* border: 2px solid blueviolet; */
+    background-color: white;
+    margin-left: 60%;
+    margin-right: 70px;
+}
+
+.mainDiv>div>div:nth-child(1){
+    height: 250px;
+    width: 50%;
+    margin-top: 90px;
+    /* border: 1px solid rgb(34, 30, 30); */
+}
+
+textarea:focus, input:focus{
+    outline: none;
+  }
+  *:focus {
+    outline: none;
+  }
