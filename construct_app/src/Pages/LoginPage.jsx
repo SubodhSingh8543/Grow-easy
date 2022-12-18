@@ -71,7 +71,6 @@ function LoginPage() {
          </div>
 
          <p>🌎 You are on our US data hosting centre. Switch to our EU or AU data hosting centre.</p>
-        <h1>Login Page</h1>
         </div>
     )
 }
